@@ -23,7 +23,7 @@ oc apply -f https://raw.githubusercontent.com/openfaas/faas-netes/master/yaml/pr
 oc apply -f https://raw.githubusercontent.com/openfaas/faas-netes/master/yaml/queueworker-dep.yml
 oc apply -f https://raw.githubusercontent.com/openfaas/faas-netes/master/yaml/rbac.yml
 
-oc apply -f https://raw.githubusercontent.com/mirroredge/faas-netes/master/yaml/openshift/ocp-route.yml
+oc apply -f https://raw.githubusercontent.com/mirroredge/faas-netes/master/openshift/ocp-route.yml
 
 echo You have installed #{addon-name}
 echo To access #{addon-name} go to https://openfaas-openfaas.#{routing-suffix}
