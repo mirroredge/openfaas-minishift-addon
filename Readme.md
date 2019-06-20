@@ -12,6 +12,12 @@ To apply the add-on once to a running Minishift VM, run the following command:
 ``` minishift addons apply openfaas ```
 To enable the add-on to start each time that Minishift starts, run the following command:
 
-``` minishift addons enable  openfaas ```
+``` minishift addons enable openfaas ```
 
-To D
+To remove the add-on, run the following command:
+
+``` minishift addons remove openfaas ```
+
+Uninstall the openfaas add-on by running the following command:
+
+``` minishift addons uninstall openfaas ```
