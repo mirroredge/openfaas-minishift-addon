@@ -5,22 +5,21 @@
 oc adm new-project openfaas
 oc adm new-project openfaas-fn
 
-oc apply -f https://raw.githubusercontent.com/openfaas/faas-netes/master/yaml/alertmanager-cfg.yml
-oc apply -f https://raw.githubusercontent.com/openfaas/faas-netes/master/yaml/alertmanager-dep.yml
-oc apply -f https://raw.githubusercontent.com/openfaas/faas-netes/master/yaml/alertmanager-svc.yml
-oc apply -f https://raw.githubusercontent.com/openfaas/faas-netes/master/yaml/gateway-dep.yml
-oc apply -f https://raw.githubusercontent.com/openfaas/faas-netes/master/yaml/gateway-svc.yml
-oc apply -f https://raw.githubusercontent.com/openfaas/faas-netes/master/yaml/nats-dep.yml
-oc apply -f https://raw.githubusercontent.com/openfaas/faas-netes/master/yaml/nats-svc.yml
-oc apply -f https://raw.githubusercontent.com/openfaas/faas-netes/master/yaml/prometheus-cfg.yml
-oc apply -f https://raw.githubusercontent.com/openfaas/faas-netes/master/yaml/prometheus-dep.yml
-oc apply -f https://raw.githubusercontent.com/openfaas/faas-netes/master/yaml/prometheus-rbac.yml
-oc apply -f https://raw.githubusercontent.com/openfaas/faas-netes/master/yaml/prometheus-svc.yml
-oc apply -f https://raw.githubusercontent.com/openfaas/faas-netes/master/yaml/queueworker-dep.yml
-oc apply -f https://raw.githubusercontent.com/openfaas/faas-netes/master/yaml/rbac.yml
+oc apply -f https://raw.githubusercontent.com/mirroredge/faas-netes/master/yaml/alertmanager-cfg.yml
+oc apply -f https://raw.githubusercontent.com/mirroredge/faas-netes/master/yaml/alertmanager-dep.yml
+oc apply -f https://raw.githubusercontent.com/mirroredge/faas-netes/master/yaml/alertmanager-svc.yml
+oc apply -f https://raw.githubusercontent.com/mirroredge/faas-netes/master/yaml/gateway-dep.yml
+oc apply -f https://raw.githubusercontent.com/mirroredge/faas-netes/master/yaml/gateway-svc.yml
+oc apply -f https://raw.githubusercontent.com/mirroredge/faas-netes/master/yaml/nats-dep.yml
+oc apply -f https://raw.githubusercontent.com/mirroredge/faas-netes/master/yaml/nats-svc.yml
+oc apply -f https://raw.githubusercontent.com/mirroredge/faas-netes/master/yaml/prometheus-cfg.yml
+oc apply -f https://raw.githubusercontent.com/mirroredge/faas-netes/master/yaml/prometheus-dep.yml
+oc apply -f https://raw.githubusercontent.com/mirroredge/faas-netes/master/yaml/prometheus-rbac.yml
+oc apply -f https://raw.githubusercontent.com/mirroredge/faas-netes/master/yaml/prometheus-svc.yml
+oc apply -f https://raw.githubusercontent.com/mirroredge/faas-netes/master/yaml/queueworker-dep.yml
+oc apply -f https://raw.githubusercontent.com/mirroredge/faas-netes/master/yaml/rbac.yml
 
 oc apply -f https://raw.githubusercontent.com/mirroredge/faas-netes/master/openshift/openfaas-route.yml
-oc apply -f https://raw.githubusercontent.com/mirroredge/faas-netes/master/openshift/prometheus-route.yml
 
 echo You have installed #{addon-name}
 echo To access #{addon-name} go to https://openfaas-openfaas.#{routing-suffix}

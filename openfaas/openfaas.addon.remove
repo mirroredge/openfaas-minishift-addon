@@ -3,4 +3,4 @@
 # Url: https://github.com/openfaas/faas-netes
 
 oc delete project openfaas
-oc delte project openfaas-fn
+oc delete project openfaas-fn
